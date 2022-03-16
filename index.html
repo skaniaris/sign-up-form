@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>StormChaserSignUp</title>
+</head>
+<body>
+
+<aside>
+    <div class="logo">
+        <img src="stormchaserlogo.svg" alt="">
+        <h1>Storm Chaser</h1>
+        <h3>Est. 2022</h3>
+    </div>
+    <footer>
+        Photo by Ralph W Lambrecht
+    </footer>
+</aside>
+
+<main>
+    <section class="top">
+        Do you love the thrill of chasing tornadoes? Love catching stunning photos of lighting storms? Are excited to learn more about storm structure? This is the place for you! Sign up to become a part of the STORM CHASERS!
+    </section>
+
+    <section class="form">
+        <form action="">
+            <legend>Create Account</legend>
+            <div class="form-input">
+                <fieldset class="column1">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name">
+                    <label for="email">Email</label>
+                    <input type="text" id="email">
+                    <label 
+                    for="password">Password</label>
+                    <input class="pass" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" type="password" id="password">
+                    <p>password must be 8 characters at least one letter and one number</p>
+                </fieldset>
+                <fieldset class="column2">
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="text" id="phone-number">
+                    <label for="confirm-pass">Confirm Password</label>
+                    <input class ="pass" required pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" type="password" id="confirm-pass">
+                </fieldsest>
+            </form>
+            </div>
+    </section>
+
+    <section class="bottom">
+        <button class="create-account">Create Account</button>
+        <p>Already have an account? <a href="">Log in</a></p>
+    </section>
+</main>
+
+</body>
+</html>
